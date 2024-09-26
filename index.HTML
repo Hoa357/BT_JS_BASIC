@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+   
+</head>
+<body>
+    <script src="./check.js"></script>
+    <div class="container">
+         <div class="container__form">
+            <h1>Tổng hợp các bài tập HTML, CSS và JavaScript</h1>
+
+            <div class="container__form--items">
+                <h2>Bài tập 1: Kiểm tra thông tin người dùng</h2>
+                <p class="mota">Mô tả: Tạo một form để người dùng nhập tên, tuổi và địa chỉ email. Sau khi bấm nút kiểm tra, thực hiện các hàng động sau:</p>
+                <ul >
+                    <li>Kiểm tra xem tuổi có phải là số hợp lệ không.</li>
+                    <li>Kiểm tra địa chỉ email có chứa ký tự '@' không.</li>
+                    <li>Hiển thị thông báo chào mừng với tên người dùng đã nhập</li>
+                </ul>
+                
+                    <input type="text" placeholder="Nhập tên của bạn" id="name">
+                     <input type="text" placeholder="Nhập tuổi" id="age">
+                    <input type="email" placeholder="Nhập email" id="email">
+                    
+                     <button class="btt" onclick="checkInfor()">Kiểm tra</button>
+                     <div id="resultInfo"></div>
+                
+            </div>
+            <!----->
+            <div class="container__form--items">
+                <h2>Bài tập 2: Tính chu vi diện tích hình tròn</h2>
+                <p class="mota">Mô tả: Tạo một trang web cho phép người dùng nhập bán kính của một hình tròn, sau đó bấm nút để tính chu vi và diện tích của hình tròn đó.</p>
+                <ul >
+                    <li>Sử dụng công thức tính chu vi C = 2 * π * r và diện tích A = π * r².</li>
+                    <li>Kiểm tra xem bán kính nhập vào có phải là một số hợp lệ không.</li>
+                    
+                </ul>
+                
+                    <input type="text" placeholder="Nhập bán kính" id="r">
+                     
+                     <button class="btt" onclick="CalculateCircle()">Tính toán</button>
+                 <div id="resultCircle"></div>
+            </div>
+
+            <!----->
+             <div class="container__form--items">
+                <h2>Bài tập 3: Kiểm tra số chẵn, số lẻ</h2>
+                <p class="mota">Mô tả: Tạo một form đơn giản cho phép người dùng nhập vào một số và kiểm tra xem số đó là số chẵn hay lẻ.</p>
+                <ul >
+                    <li>Sử dụng toán tử chia lấy dư (%) để kiểm tra chẵn lẻ.</li>
+                    <li>Hiển thị thông báo kết quả sau khi kiểm tra.</li>
+                    
+                </ul>
+                
+                    <input type="text" placeholder="Nhập một số" id="NumberToCheck">
+                     
+                     <button class="btt" onclick="CheckNumber()">Kiểm tra</button>
+                   <div id="resultNumber"></div>
+            </div>
+
+            <!----->
+              <div class="container__form--items">
+                <h2>Bài tập 4: Kiểm tra năm nhuận</h2>
+                <p class="mota">Mô tả: Viết một chương trình để kiểm tra xem một năm có phải là năm nhuận không.</p>
+                <ul >
+                    <li>Năm nhuận là năm chia hết cho 4, nhưng nếu là năm không chia hết cho 100 thì phải chia hết cho 400 mới được tính là năm nhuận.</li>
+                    
+                </ul>
+           
+                    <input type="text" placeholder="Nhập năm" id="Year">
+                     
+                     <button class="btt" onclick="CheckLeapYear()">Kiểm tra</button>
+                      <div id="resultYear"></div>
+               
+            </div>
+             <!----->
+
+               <!----->
+              <div class="container__form--items">
+                <h2>Bài tập 5: Máy tính đơn giản</h2>
+                <p class="mota">Mô tả: Viết một chương trình máy tính đơn giản. Người dùng nhập vào hai số và chọn một phép toán (+, -, *, /).</p>
+                <ul >
+                    <li>Sử dụng switch-case để xử lý các phép tính cộng, trừ, nhân, chia.</li>
+                    
+                </ul>
+              
+             
+                    <input type="text" placeholder="Số thứ nhất" id="number1">
+                    <input type="text" placeholder="Số thứ hai" id="number2">
+                    <select id="chooseCal">
+                        <option value="add" >Cộng (+)</option>
+                        <option value="sub" >Trừ (-)</option>
+                        <option value="mul">Nhân (*)</option>
+                        <option value="divi">Chia (/)</option>
+                    </select>
+                     <button class="btt" onclick="Calculate()">Tính toán</button>
+                     <div id="resultCalculate"></div>
+            </div>
+
+            <!----->
+              <div class="container__form--items">
+                <h2>Bài tập 6: In số chẵn từ 1 đến 100</h2>
+                <p class="mota">Mô tả: Viết một chương trình sử dụng vòng lặp for để in ra tất cả các số chẵn từ 1 đến 100 trên trang web.</p>
+                <ul >
+                    <li>Sử dụng vòng lặp for để duyệt từ 1 đến 100.</li>
+                    <li>Kiểm tra xem số đó có chia hết cho 2 không và chỉ in ra số chẵn.</li>
+                    
+                </ul>
+              
+                  
+                     <button class="btt"  onclick="PrintEvenNumber()">In số chãn</button>
+                     <div id="resultPrintNumber"></div>
+            </div>
+          <!----->
+          <div class="container__form--items">
+                <h2>Bài tập 7: Đoán số bí mật</h2>
+                <p class="mota">Mô tả: Viết một chương trình mà người dùng phải đoán một số bí mật từ 1 đến 100. Chương trình sẽ thông báo xem số người dùng nhập vào lớn hơn, nhỏ hơn hay bằng số bí mật.</p>
+                <ul >
+                    <li>Sử dụng vòng lặp while để tiếp tục yêu cầu người dùng nhập số cho đến khi đoán đúng.</li>
+                    <li>Sử dụng hàm Math.random() để tạo số ngẫu nhiên.</li>
+                    
+                </ul>
+              
+                    <input type="text" placeholder="Nhập số bạn đoán" id="numberInput">
+                     
+                     <button class="btt" onclick="GuessSecretNumber()">Đoán</button>
+                     <div id="resultSecretNumber"></div>
+            </div>
+             <!----->
+
+              <!----->
+              <div class="container__form--items">
+                <h2>Bài tập 8: Tính tổng các số từ 1 đến n</h2>
+                <p class="mota">Mô tả: Viết một chương trình tính tổng tất cả các số từ 1 đến n, trong đó n là số người dùng nhập vào.</p>
+                <ul >
+                    <li>Sử dụng vòng lặp for để tính tổng.</li>
+                    <li>Kiểm tra xem người dùng nhập vào có phải là số hợp lệ không.</li>
+                    
+                </ul>
+               
+                      <input type="text" placeholder="Nhập số n" id="numberToSum">
+                     <button class="btt" onclick="SumNumber()">Tính tổng</button>
+                  <div id="resultSum"></div>
+            </div>
+        </div>
+    </div>
+    
+
+    </body>
+</body>
+</html>

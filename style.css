@@ -1,0 +1,56 @@
+.container {
+  width: 1200px;
+  margin: 30px 50px 30px 50px;
+  background-color: #f4f4f4;
+}
+.container__form {
+  width: 80%;
+  margin: 20px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+}
+.container__form--items {
+  margin-bottom: 30px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #fafafa;
+}
+.container__form--items h2 {
+  color: #555;
+}
+.container__form--items input {
+  display: block;
+  width: 95%;
+  padding: 10px;
+  margin: 10px 10px;
+  border-radius: 5px;
+  border: 1px solid #201d1d;
+}
+.container__form--items select {
+  display: block;
+  width: 97%;
+  padding: 10px;
+  margin: 10px 10px;
+  border-radius: 5px;
+  border: 1px solid #201d1d;
+}
+
+.mota {
+  color: #666;
+}
+
+.btt {
+  display: block;
+  width: 97%;
+  padding: 10px;
+  margin: 10px 10px;
+  border-radius: 5px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=style.css.map */
